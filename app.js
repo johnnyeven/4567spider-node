@@ -6,7 +6,9 @@ log4js.configure({
     }, {
         type: 'file',
         filename: 'logs/request.log',
-        category: 'request'
+        category: 'request',
+        maxLogSize: 512000000,
+        backups:0
     }],
     replaceConsole: true
 });
